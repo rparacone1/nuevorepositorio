@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/* Index */
+
+.Padre
+
+.arial
+{
+    background-color: blue;
+}
+
+
+
+.divhedy
+{
+    display: flex;
+    justify-content: center;
+}
+
+div{   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexPadre
+{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    }
+
+.products 
+{
+    background-color: black;
+}
+.atencionalcliente
+{
+    background-color: black;
+}
+.contacto
+{
+    background-color: black;
+}
+
+.flexHijo
+{
+
+    text-align: center;
+}
+
+li{
+    font-size: 40px;
+    color: white;
+}
+
+/* los h */
+h1
+{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+h2
+{
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+/* footer */
+footer
+{
+    background-color: pink;
+}
+
+
+
+
+
+
+body{
+    background-color: blue;
+}
