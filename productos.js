@@ -11,14 +11,14 @@ for(let i = 0; i<5; i++)
     else if ((productos=="llavero star wars") || (productos == "Llavero Star Wars")){
         alert("Tenemos el producto");
         break;}
-else{
-    alert("No tenemos el producto");
+    else if (i==2){
+        alert("Recomendamos incluir a los productos con los siguientes nombres: LLavero Star Wars, Darth vader y Torre Eiffel. Solo nos quedan 3 productos de stock")
     }
+    else{
+        alert("No tenemos el producto")
+    }
+    
 productos = prompt("Escriba su mensaje")
 }
 
-/* Preguntar al profesor como hacer para que 1) mande la alerta si terminan todas las opciones
-2 como aplicar todo esto a un ecomerce. */
-
-// algoritmo con ciclo //
 
