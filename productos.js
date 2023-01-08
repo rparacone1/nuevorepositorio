@@ -21,4 +21,3 @@ for(let i = 0; i<5; i++)
 productos = prompt("Escriba su mensaje")
 }
 
-
