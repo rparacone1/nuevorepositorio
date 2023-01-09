@@ -1,8 +1,7 @@
 productos = prompt("Escriba su mensaje")
 
-
-for(let i = 0; i<5; i++) 
-{if ((productos=="Darth Vader") || (productos== "darth vader"))
+    for(let i = 0; i<5; i++) 
+    {if ((productos=="Darth Vader") || (productos== "darth vader"))
     {alert("tenemos el producto");
         break;}
     else if((productos=="torre eiffel") || (productos== "Torre Eiffel"))
@@ -20,4 +19,20 @@ for(let i = 0; i<5; i++)
     
 productos = prompt("Escriba su mensaje")
 }
+
+usuario = prompt("Escriba su nombre de usuario. Ejemplo: @Juan")
+dni =  prompt("Escriba su Dni")
+alert(`Bienvenido a nuestro catalogo de productos ${usuario} cuyo dni es ${dni}`)
+
+
+
+
+
+
+
+
+
+
+
+
 
