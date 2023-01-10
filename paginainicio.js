@@ -1,3 +1,4 @@
+
 nombre = prompt ("Ingrese su nombre")
 
 for (let i = 0; i<4; i++)
