@@ -1,6 +1,6 @@
-
+alert("Los productos que nos quedan disponibles son: Darth Vader, Llavero star wars, torre eiffel")
 function produc(){
-    productos = prompt("Elija su producto. Stock: Darth Vader, llavero star wars, torre eiffel").toUpperCase()
+    productos = prompt("Elija su producto.").toUpperCase()
     for(let i = 0; i<5; i++)
     {
         if (productos == "DARTH VADER") {
