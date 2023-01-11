@@ -1,5 +1,6 @@
+
 function produc(){
-    productos = prompt("Elija su producto").toUpperCase()
+    productos = prompt("Elija su producto. Stock: Darth Vader, llavero star wars, torre eiffel").toUpperCase()
     for(let i = 0; i<5; i++)
     {
         if (productos == "DARTH VADER") {
@@ -50,6 +51,9 @@ if (edad>18)
 }
 }
 datos()
+
+
+
 // Calculo de gastos totales a pagar //
 function precioapagar()
 { 
@@ -78,10 +82,10 @@ for (let a=0; a<3; a++)
     }
 
 }
-
-console.log(precioTotal+ PrecioTotal2 + precioTota3)
-    
+let suma = (precioTotal+ PrecioTotal2 + precioTota3)
+console.log(precioTotal+ PrecioTotal2 + precioTota3) 
+console.log(suma)
+alert("El gasto total es de: $" + suma)
 }
 
 precioapagar()
-
