@@ -1,5 +1,5 @@
 function produc(){
-    productos = prompt("Elija su producto y calcularemos su gasto").toUpperCase()
+    productos = prompt("Elija su producto").toUpperCase()
     for(let i = 0; i<5; i++)
     {
         if (productos == "DARTH VADER") {
@@ -50,7 +50,7 @@ if (edad>18)
 }
 }
 datos()
-
+// Calculo de gastos totales a pagar //
 function precioapagar()
 { 
 let precioDarthVader = Number("1000")
@@ -78,7 +78,7 @@ for (let a=0; a<3; a++)
     }
 
 }
-// este seria el gasto total de los productos seleccionados //
+
 console.log(precioTotal+ PrecioTotal2 + precioTota3)
     
 }
