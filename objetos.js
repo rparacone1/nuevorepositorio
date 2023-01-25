@@ -5,9 +5,7 @@ Javascript
 segunda
 entrega
 
-*//
-
-
+*/
 
 
 
@@ -57,6 +55,30 @@ alert("El gasto total es de: $" + suma)
 }
 
 precioapagar()
+
+
+
+
+
+
+todosLosproductos = producto1, producto2, producto3
+for(let i = 0; i<5; i++)
+{
+array = prompt('Elija un producto. recomendaciones: darth vader, llavero star wars, torre eiffel').toUpperCase
+
+const arrayproductos =
+[
+producto1, producto2, producto3
+]
+
+if (array == todosLosproductos)
+    alert('El producto esta dentro de los indicados')
+else 
+    alert('El producto no esta dentro de los indicados')
+
+    array = prompt('Elija un producto. recomendaciones: darth vader, llavero star wars, torre eiffel').toUpperCase
+}
+
 
 
 
