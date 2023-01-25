@@ -1,3 +1,6 @@
+/*
+
+
 alert("Los productos que nos quedan disponibles son: Darth Vader, Llavero star wars, torre eiffel")
 function produc(){
     productos = prompt("Elija su producto.").toUpperCase()
@@ -89,3 +92,5 @@ alert("El gasto total es de: $" + suma)
 }
 
 precioapagar()
+
+*/
