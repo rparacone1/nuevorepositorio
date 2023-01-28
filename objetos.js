@@ -9,12 +9,12 @@ function Producto(nombre, color, precio)
 
 const producto1 = new Producto (['DARTH VADER','DARTHH VADER', 'DAR VADER','DARS VADER'], 'Negro', 1000);
 const producto2 = new Producto (['LLAVERO STAR WARS', 'llavero star wors', 'llavero de star wars', 'star wars llavero'], 'Negro y rojo', 500);
-const producto3 = new Producto (['Torre Eiffel', 'torre eifel', 'torre ifel', 'torre eifel'], 'Gris', 2000);
+const producto3 = new Producto ('TORRE EIFFEL', 'Gris', 2000);
 const producto4 = new Producto ('YODA', 'Verde', 1500);
-const producto5 = new Producto (['Auto','car'], 'Azul', 400);
-const producto6 = new Producto (['Avion','abion','plane'], 'Blanco y celeste', 1000);
+const producto5 = new Producto ('AUTO', 'Azul', 400);
+const producto6 = new Producto ('AVION', 'Blanco y celeste', 1000);
 const producto7 = new Producto ('CAMELLO', 'Naranja', 4000);
-const producto8 = new Producto (['Arbol','arrbol','arbol'], 'Verde', 5000);
+const producto8 = new Producto ('ARBOL', 'Verde', 5000);
 
 
 let precioTotal = Number(0)
