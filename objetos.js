@@ -1,3 +1,17 @@
+
+/* SEGUNDA 
+
+            ENTREGA
+                        DEL 
+                                PROYECTO
+                                            INTEGRADOR
+
+                                                                */
+
+
+
+
+
 alert('Productos en stock: Darth vader, llavero star wars, torre eiffel, yoda, avion, auto, camello, arbol')
 function Producto(nombre, color, precio)
 {
