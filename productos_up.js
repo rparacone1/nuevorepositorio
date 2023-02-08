@@ -40,16 +40,9 @@ alert(`El precio total es de ${precioTotal}`)
 
 // Dom //
 
-
-
-
-let elem = document.getElementById('bievenida');
-if (precioTotal>1000)
+benvenuto = document.getElementById("bienvenida")
+if(precioTotal>1000)
     {
-    elem.classname = "rojo"
-    }
-else
-    {
-        elem.classname = "verde"
-    }
-
+benvenuto.innerHTML = "<h2>Queremos advertirle que sue precio supero el monto maximo para transferencia bancaria</h2>"
+benvenuto.className = "rrojo"
+}

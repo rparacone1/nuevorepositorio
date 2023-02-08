@@ -88,7 +88,12 @@ body{
     background-color: blue;
 }
 
-.verde
-{color: green;}
+#verde
+{
+    color: green;
+}
 
-.rojo
+.rrojo
+{
+    color: red;
+}
