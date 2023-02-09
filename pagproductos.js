@@ -1,4 +1,40 @@
+/*  C
+        
+        Ó
+            
+            D
+                
+                I
+                    
+                    G
+                        
+                        O
+                                
+                                A
+                                    
+                                    N
+                                        
+                                        T 
+                                            
+                                            E 
+                                                
+                                                R 
+                                                    
+                                                    I 
+                                                        
+                                                        O 
+                                                            
+                                                            R
 /*
+
+
+
+
+
+
+
+
+
 alert("Los productos que nos quedan disponibles son: Darth Vader, Llavero star wars, torre eiffel")
 function produc(){
     productos = prompt("Elija su producto.").toUpperCase()
