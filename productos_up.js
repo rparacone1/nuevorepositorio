@@ -1,42 +1,33 @@
-
 let precioTotal = Number(0)
+let productos = 
+[
+    {nombre: 'DARTH VADER', color: 'Negro', precio: 1000},
+    {nombre: 'LLAVERO STAR WARS', color: 'Negro y rojo', precio: 500},
+    {nombre:'TORRE EIFFEL', color: 'Gris', precio: 2000}
+];
+productos.push
+({nombre: 'YODA', color: 'Verde', precio: 1500},
+{nombre: 'AUTO', color: 'Azul', precio: 400},
+{nombre: 'AVION', color: 'Blanco y celeste', precio: 1000},
+{nombre: 'CAMELLO', color: 'Naranja', precio: 4000},
+{nombre: 'ARBOL', color: 'Verde', precio: 5000});
 
-alert('Productos en stock: Darth vader, llavero star wars, torre eiffel, yoda, avion, auto, camello, arbol')
-function Producto(nombre, color, precio)
-{
-    this.nombre = nombre;
-    this.color = color; 
-    this.precio = precio;
-}
-
-
-const producto1 = new Producto ('DARTH VADER', 'Negro', 1000);
-const producto2 = new Producto ('LLAVERO STAR WARS', 'Negro y rojo', 500);
-const producto3 = new Producto ('TORRE EIFFEL', 'Gris', 2000);
-const producto4 = new Producto ('YODA', 'Verde', 1500);
-const producto5 = new Producto ('AUTO', 'Azul', 400);
-const producto6 = new Producto ('AVION', 'Blanco y celeste', 1000);
-const producto7 = new Producto ('CAMELLO', 'Naranja', 4000);
-const producto8 = new Producto ('ARBOL', 'Verde', 5000);
-
-
-const elarray = [producto1.nombre, producto2.nombre, producto3.nombre, producto4.nombre, producto5.nombre, producto6.nombre, producto7.nombre, producto8.nombre]
-const other = [producto1.precio, producto2.precio, producto3.precio, producto4.precio, producto5.precio, producto6.precio, producto7.precio, producto8.precio]
 
 for (let i=0; i<3; i++)
-    {  guardeaqui = prompt("Escriba alguno de los productos").toUpperCase()
-
-        if (elarray.indexOf(guardeaqui) != -1)
-        {
-            alert("Esta el producto")
-            const variable = (elarray.indexOf(guardeaqui))
-            const lesume = precioTotal += other[variable]
-        }
-        else{
-            alert("El producto no esta disponible")
-        }
-    }
+{
+guardeaqui = prompt("Escriba alguno de los productos").toUpperCase()
+const varilo = productos.find((elemento)=>{
+    return elemento.nombre == guardeaqui
+});
+if(varilo)
+{
+    const lesume = precioTotal += varilo.precio
+}
+}
 alert(`El precio total es de ${precioTotal}`)
+
+
+
 
 // Dom //
 

@@ -1,3 +1,5 @@
+
+
 function entrada()
 {
 nombre = prompt ("Ingrese su nombre")

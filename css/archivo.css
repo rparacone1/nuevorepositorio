@@ -3,27 +3,37 @@
     padding: 0;
     }
 
-/* Index */
+body{
+        background-color: blue;
+    }
 
-.Padre
-
-.arial
+/* Header comun */
+.letrero
 {
-    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 75px;
 }
-
-
-
-.divhedy
+.divheeedy
 {
     display: flex;
     justify-content: center;
 }
-
-div{   display: flex;
-    justify-content: center;
-    align-items: center;
+h3 {
+    color: white;
+    text-align: center;
 }
+
+
+/* Index */
+div{   
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+
 
 .flexPadre
 {
@@ -31,6 +41,19 @@ div{   display: flex;
     flex-direction: column ;
     justify-content: center;
     }
+
+.flexHijo
+{
+
+    text-align: center;
+}
+li{
+    font-size: 40px;
+    color: white;
+    background-color: black;
+
+}
+
 
 .products 
 {
@@ -45,55 +68,46 @@ div{   display: flex;
     background-color: black;
 }
 
-.flexHijo
+
+
+/* Productos */
+.divPadre
 {
-
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin: 10px;
 }
 
-li{
-    font-size: 40px;
-    color: white;
-}
 
-/* los h */
-h1
-{
-    color: white;
-    text-align: center;
-    font-size: 75px;
-}
 h2
 {
     text-align: center;
 }
 
-h3 {
-    color: white;
-    text-align: center;
-}
-
-/* footer */
-footer
-{
-    background-color: pink;
-}
 
 
-
-
-
-
-body{
-    background-color: blue;
-}
-
-#verde
-{
-    color: green;
-}
 
 .rrojo
 {
     color: red;
 }
+
+
+
+
+/* Contacto  */
+
+
+
+
+
+
+.enundiv
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
