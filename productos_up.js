@@ -1,29 +1,37 @@
 let precioTotal = Number(0)
-let productos = 
-[
-    {nombre: 'DARTH VADER', color: 'Negro', precio: 1000},
-    {nombre: 'LLAVERO STAR WARS', color: 'Negro y rojo', precio: 500},
-    {nombre:'TORRE EIFFEL', color: 'Gris', precio: 2000}
-];
-productos.push
-({nombre: 'YODA', color: 'Verde', precio: 1500},
-{nombre: 'AUTO', color: 'Azul', precio: 400},
-{nombre: 'AVION', color: 'Blanco y celeste', precio: 1000},
-{nombre: 'CAMELLO', color: 'Naranja', precio: 4000},
-{nombre: 'ARBOL', color: 'Verde', precio: 5000});
+class Producto{
+    constructor(nombre,color,precio)
+    {
+    this.nombre = nombre;
+    this.color = color;
+    this.precio = precio;
+    }
+
+    }
+
+const arrayproductos = [];
+arrayproductos.push(new Producto('DARTH VADER', 'Negro', 1000));
+arrayproductos.push(new Producto('YODA', 'Verde', 1500));
+arrayproductos.push(new Producto('LLAVERO STAR WARS', 'Negro y rojo', 500));
+arrayproductos.push(new Producto('TORRE EIFFEL', 'Gris', 2000));
+arrayproductos.push(new Producto('AUTO', 'Azul', 400)),
+arrayproductos.push(new Producto('AVION', 'Blanco y celeste', 1000)),
+arrayproductos.push(new Producto('CAMELLO', 'Naranja', 4000)),
+arrayproductos.push(new Producto('ARBOL', 'Verde', 5000));
 
 
-for (let i=0; i<3; i++)
+for (let index = 0; index <3; index++) {
+    guardeaqui = prompt("Escriba alguno de los productos").toUpperCase()
+    arrayproductos.find((elemento) =>
 {
-guardeaqui = prompt("Escriba alguno de los productos").toUpperCase()
-const varilo = productos.find((elemento)=>{
-    return elemento.nombre == guardeaqui
-});
-if(varilo)
-{
-    const lesume = precioTotal += varilo.precio
-}
-}
+    if(elemento.nombre == guardeaqui)
+    {
+        const lesume = precioTotal += elemento.precio
+        alert("El producto esta disponible")
+    } 
+})
+
+}  
 alert(`El precio total es de ${precioTotal}`)
 
 
