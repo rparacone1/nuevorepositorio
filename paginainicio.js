@@ -1,28 +1,31 @@
-
-
+/*
+let est = true
 function entrada()
 {
 nombre = prompt ("Ingrese su nombre")
-
 for (let i = 0; i<4; i++)
 {
-    if ((nombre !="") && (nombre != Number(nombre)))
+    if ((nombre !="") && (typeof nombre == "string")) 
     {
+        est = true
         alert("Bienvenido " + nombre);
-        break
+        break;
     }
     else
     {   
+        est = false
         nombre = prompt("Ingrese su nombre, por favor"); 
     }
-
-    if((i==3) && (nombre != Number(nombre)))
-    {
-        alert('El numero de intentos a finalizado') 
-    }
-
 
 }
 }
 
 entrada()
+
+if (est == false)
+{
+    alert("El numero de intentos ha finalizado. Su acceso ha sido bloqueado")
+}
+*/
+
+// pagina de inicio lista //

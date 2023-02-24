@@ -1,47 +1,31 @@
 let precioTotal = Number(0)
 class Producto{
-    constructor(nombre,color,precio)
+    constructor(id, nombre, color, precio, img)
     {
+    this.id = id;
     this.nombre = nombre;
     this.color = color;
     this.precio = precio;
-    }
 
+    }
     }
 
 const arrayproductos = [];
-arrayproductos.push(new Producto('DARTH VADER', 'Negro', 1000));
-arrayproductos.push(new Producto('YODA', 'Verde', 1500));
-arrayproductos.push(new Producto('LLAVERO STAR WARS', 'Negro y rojo', 500));
-arrayproductos.push(new Producto('TORRE EIFFEL', 'Gris', 2000));
-arrayproductos.push(new Producto('AUTO', 'Azul', 400)),
-arrayproductos.push(new Producto('AVION', 'Blanco y celeste', 1000)),
-arrayproductos.push(new Producto('CAMELLO', 'Naranja', 4000)),
-arrayproductos.push(new Producto('ARBOL', 'Verde', 5000));
+arrayproductos.push(new Producto(1,'YODA', 'Verde', 1500));
+arrayproductos.push(new Producto(2,'TORRE EIFFEL', 'Gris', 2000));
+arrayproductos.push(new Producto(3,'ARTURITO', 'Verde', 1500));
+arrayproductos.push(new Producto(4,'CHUBACA', 'Azul', 400)),
+arrayproductos.push(new Producto(5, 'DARTH VADER', 'Negro', 1000));
+arrayproductos.push(new Producto(6, 'LLAVERO STAR WARS', 'Negro y rojo', 500));
+arrayproductos.push(new Producto(7,'TRIPIO', 'Blanco y celeste', 1000))
 
-
-for (let index = 0; index <3; index++) {
-    guardeaqui = prompt("Escriba alguno de los productos").toUpperCase()
-    arrayproductos.find((elemento) =>
+let aszr = document.getElementsByClassName("flex-padre");
+for(const producto of arrayproductos)
 {
-    if(elemento.nombre == guardeaqui)
-    {
-        const lesume = precioTotal += elemento.precio
-        alert("El producto esta disponible")
-    } 
-})
-
-}  
-alert(`El precio total es de ${precioTotal}`)
-
-
-
-
-// Dom //
-
-benvenuto = document.getElementById("bienvenida")
-if(precioTotal>1000)
-    {
-benvenuto.innerHTML = "<h2>Queremos advertirle que sue precio supero el monto maximo para transferencia bancaria</h2>"
-benvenuto.className = "rrojo"
+    aszr[0].innerHTML += `<div class="Flex-flex">
+    <img src="Imagenes/${producto.id}.jpg" height="250px" width= "auto" alt="">
+    </div>`
+    aszr[1].innerHTML += `<div class="Flex-flex">
+    <img src="Imagenes/${producto.id}.jpg" height="250px" width= "auto" alt="">
+    </div>`
 }

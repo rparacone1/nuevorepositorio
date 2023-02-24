@@ -1,38 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    }
+    background-color: blue;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    font-family: 'Karma', serif;
+}
 
-body{
-        background-color: blue;
-    }
 
 /* Header comun */
-.letrero
+header
 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+
+}
+.primero-header
+{
+    display: flex;
+    justify-content: center;
+}
+
+.letrero{
     color: white;
     text-align: center;
     font-size: 75px;
 }
-.divheeedy
+.letrero:hover
 {
-    display: flex;
-    justify-content: center;
+    transform: scale(1.15);
+
 }
-h3 {
+.h3-header {
     color: white;
     text-align: center;
 }
 
-
 /* Index */
-div{   
-    display: flex;
-    justify-content: center;
-    padding: 0;
-
-}
-
 
 
 .flexPadre
@@ -44,9 +54,11 @@ div{
 
 .flexHijo
 {
-
+    
     text-align: center;
+    
 }
+
 li{
     font-size: 40px;
     color: white;
@@ -55,59 +67,39 @@ li{
 }
 
 
-.products 
-{
-    background-color: black;
-}
-.atencionalcliente
-{
-    background-color: black;
-}
-.contacto
-{
-    background-color: black;
-}
-
-
-
 /* Productos */
-.divPadre
+.flex-padre
 {
     display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.flex-padre img
+{   
+    height: 200px;
+    width: auto;
+    transition: all 300ms;
+    position: relative;
+}
+.flex-padre img:hover
+{
+    transform: scale(1.15);
+    
 }
 
-
-h2
+#bienvenida
 {
     text-align: center;
 }
 
 
 
-
-.rrojo
-{
-    color: red;
-}
-
-
-
-
 /* Contacto  */
-
-
-
-
-
 
 .enundiv
 {
     display: flex;
     justify-content: center;
 }
-
-
-
