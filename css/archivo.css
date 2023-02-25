@@ -3,11 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: blue;
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
     font-family: 'Karma', serif;
+    background-color: blue;
 }
+
+
 
 
 /* Header comun */

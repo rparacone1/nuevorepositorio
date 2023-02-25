@@ -1,0 +1,19 @@
+body{
+    background-color: blue;
+}
+
+.letrero{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+.h3-header {
+    color: white;
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+}

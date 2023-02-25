@@ -1,144 +1,127 @@
-let precioTotal = Number(0)
-// constructor de objetos por clases //
-class Producto{
-    constructor(id, nombre, color, precio, algo)
-    {
-    this.id = id;
-    this.nombre = nombre;
-    this.color = color;
-    this.precio = precio;
-    this.algo = algo;
+/** CARRITO RE LOCOOOOOOOOO AHH**/
+
+//Creo la clase Producto, con las propiedades id, nombre, precio y cantidad:
+
+class Producto {
+    constructor(id, nombre, precio, cantidad) {
+      this.id = id;
+      this.nombre = nombre;
+      this.precio = precio;
+      this.cantidad = cantidad;
     }
+  }
+  
+  //Creo productos y los almaceno en un array:
+  
+  const producto1 = new Producto(1, 'Yoda', 20000, 1);
+  const producto2 = new Producto(2, 'Torre Eiffel', 30000, 1);
+  const producto3 = new Producto(3, 'Arturito', 10000, 1);
+  const producto4 = new Producto(4, 'Chubaca', 5000, 1);
+
+  const productos = [producto1, producto2, producto3, producto4];
+
+  
+  //Muestro los productos modificando el DOM.
+  
+  const contenedorProductos = document.getElementById('contenedorProductos');
+  
+  productos.forEach((producto) => {
+    const divProducto = document.createElement('div');
+    divProducto.classList.add('card', 'col-xl-3', 'col-md-6', 'col-sm-12');
+    divProducto.innerHTML = `
+                            <div>
+                                <img src="Imagenes/${producto.id}.jpg" class="card-img-top img-fluid py-3">
+                                <div class="card-body">
+                                    <h3 class="card-title"> ${producto.nombre} </h3>
+                                    <p class="card-text"> ${producto.precio} </p>
+                                    <button id="boton${producto.id}" class="btn btn-primary"> Agregar al Carrito </button>
+                                </div>
+                            </div>`;
+    contenedorProductos.appendChild(divProducto);
+    //Agregar un evento al boton de agregar al carrito:
+    const boton = document.getElementById(`boton${producto.id}`);
+    boton.addEventListener('click', () => {
+      agregarAlCarrito(producto.id);
+    });
+  });
+  
+  //Creo el carrito de compras y una función que busque el producto por id y lo agregue al carrito.
+  
+  const carrito = [];
+  
+  //Versión Simple:
+  
+  /*
+  const agregarAlCarrito = (id) => {
+    const producto = productos.find(producto => producto.id === id);
+    carrito.push(producto);
+  }
+  */
+  
+  //Versión que chequea las cantidades:
+  
+  const agregarAlCarrito = (id) => {
+    const producto = productos.find((producto) => producto.id === id);
+    const productoEnCarrito = carrito.find((producto) => producto.id === id);
+    if (productoEnCarrito) {
+      productoEnCarrito.cantidad++;
+    } else {
+      carrito.push(producto);
     }
-
-const arrayproductos = [];
-// constructor de objetos a traves del metodo push del array //
-arrayproductos.push(new Producto(1,'YODA', 'Verde', 1500));
-arrayproductos.push(new Producto(2,'TORRE EIFFEL', 'Gris', 2000));
-arrayproductos.push(new Producto(3,'ARTURITO', 'Verde', 1500));
-arrayproductos.push(new Producto(4,'CHUBACA', 'Azul', 400)),
-arrayproductos.push(new Producto(5, 'DARTH VADER', 'Negro', 1000));
-arrayproductos.push(new Producto(6, 'LLAVERO STAR WARS', 'Negro y rojo', 500));
-arrayproductos.push(new Producto(7,'TRIPIO', 'Blanco y celeste', 1000))
-
-// plantilla html, cargamos el div padre que contiene todo para luego subir el nuevo html de cada uno de los elementos que estan en el array a traves de un for // 
-// paso 1 //
-let energy = document.getElementsByClassName("father-flex");
-for(const producto of arrayproductos)
-{
-    energy[0].innerHTML += `<div class="Flex-flex">
-    <img class="foto-clase" src="Imagenes/${producto.id}.jpg" alt="">
-    <h4 class="nombreJuguete">${producto.nombre} </h4>
-    <span> $${producto.precio} </span>
-    <i class="bx bx-shopping-bag courtney"></i>
-    </div>`
-}
-// paso 2 //
-let ventana = document.getElementsByClassName("cartbox")
-ventana[0].innerHTML = `<img class="cart-img" src="Imagenes/${arrayproductos[0].id}.jpg" alt="">
-                        <div class="detail-box">
-                        <div class="cartproducttitle">${arrayproductos[0].nombre} </div>
-                        <div class="cartprice">${arrayproductos[0].precio} </div>
-                        <input type="number" value="1" class="cartquantity">
-                        </div> 
-                        
-                        <i class='bx bxs-trash-alt cart-remove' ></i>`
-                        
-                        
- let cartIcon = document.querySelector('#cart')     
- let cart = document.querySelector('.cartt')
- let closeCart = document.querySelector('#close-cart')
-
- // paso 1 toco el cart y me abre el cart con toda la informacion //
- cartIcon.onclick = ()=>{
-    cart.classList.add("active");
-};
-// paso dos toco la cruz y me cierra el cart //
-closeCart.onclick = ()=>{
-    cart.classList.remove("active");
-    
-};
-
-// paso 3 si toco el simbolito del cart pegado a la foto me agrega a la ventana el respectivo simbolito que toque con toda la informacion// 
-let ahora = document.querySelector(".courtney")
-ahora.onclick = ()=>
-{
-    alert("hola");
-};
-    
-
-// paso 4 cantidad * precio = total // 
-
-
-// paso 5  boton enviar a mail o donde sea  // 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// aca comienza el problema y ricorda que modificaste el right de .cartt (en css) a -100%. Antes estaba en 0 //
-
-
-/* 
-if (document.readyState == "loading"){
-    document.addEventListener("DOMContentLoaded", ready);
-    else {
-    ready();
-}
-}
-*/
-/*
-
-function ready() {
-    var removeCartButtons = document.getElementsByClassName("cart-remove")
-    console.log(removeCartButtons)
-    for(var i = 0; i<removeCartButtons.length; i++)
-    {
-        var button = removeCartButtons[i]
-        button.addEventListener("click", removeCartItem)
-
-    }
- }
-
- function removeCartItem(event) {
-    var buttonClicked = event.target
-    buttonClicked.parentElement.remove()
-}
-*/
+    actualizarCarrito();
+  };
+  
+  //Muestro el carrito de compras modificando el DOM.
+  
+  const contenedorCarrito = document.getElementById('contenedorCarrito');
+  const verCarrito = document.getElementById('verCarrito');
+  
+  verCarrito.addEventListener('click', actualizarCarrito);
+  
+  function actualizarCarrito() {
+    let aux = '';
+    carrito.forEach((producto) => {
+      aux += `
+                <div class="card col-xl-3 col-md-6 col-sm-12">
+                    <img src="img/${producto.id}.jpg" class="card-img-top img-fluid py-3">
+                    <div class="card-body">
+                        <h3 class="card-title"> ${producto.nombre} </h3>
+                        <p class="card-text"> ${producto.precio} </p>
+                        <button onClick = "eliminarDelCarrito(${producto.id})" class="btn btn-primary"> Eliminar del Carrito </button>
+                    </div>
+                </div>
+                `;
+    });
+  
+    contenedorCarrito.innerHTML = aux;
+    calcularTotalCompra();
+  }
+  
+  //Agrego una función que elimine el producto del carrito:
+  
+  const eliminarDelCarrito = (id) => {
+    const producto = carrito.find((producto) => producto.id === id);
+    carrito.splice(carrito.indexOf(producto), 1);
+    actualizarCarrito();
+  };
+  
+  ///Función para vaciar todo el carrito por completo:
+  
+  const vaciarCarrito = document.getElementById('vaciarCarrito');
+  vaciarCarrito.addEventListener('click', () => {
+    carrito.splice(0, carrito.length);
+    actualizarCarrito();
+  });
+  
+  //Creo una función que me calcule el total del carrito:
+  
+  const totalCompra = document.getElementById('totalCompra');
+  
+  const calcularTotalCompra = () => {
+    let total = 0;
+    carrito.forEach((producto) => {
+      total += producto.precio * producto.cantidad;
+    });
+    totalCompra.innerHTML = total;
+  };
+  

@@ -1,85 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sector Shopping</title>
-<link rel="stylesheet" href="productos.css">    <!-- link a la libreria que contiene los iconos de shopping cart-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Tienda Online</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="productos.css">
+    <link rel="stylesheet" href="./css/archivo.css">
+  </head>
+  <header class="header">
+    <div class="primero-header">
+    <div class="segundo-header">
+        <a href="./index.html">
+    <h1 class="letrero">Pedidos 3D</h1>
+        </a>
+    </div>
+    </div>
+    <div class="segundo-header">
+        <h3 class="h3-header">Impresiones 3D, las mejores impresiones 3D a la comodidad de tu casa </3>
+    </div>
+</header>
+<br><br><br><br><br>
+  <body class="container">
+    <h1>Mi Tienda Online</h1>
+    <h2>Stock de Productos:</h2>
+    <div class="row" id="contenedorProductos"></div>
 
-<body>
-    <header>
-        <div class="primero-header">
-            <div class="segundo-header">
-                <a href="./index.html">
-            <h1 class="letrero">Pedidos 3D</h1>
-                </a>
-            </div>
-            </div>
-            <div class="segundo-header">
-                <h3 class="h3-header">Impresiones 3D, las mejores impresiones 3D a la comodidad de tu casa </3>
-            </div>
-    <div class="container-container">
-        <a href="#" class="logo">E-commerce</a>
-        <i class='bx bx-shopping-bag' id="cart"></i>
+    <h2>Carrito de Compras:</h2>
+    <button class="btn btn-primary" id="verCarrito">Ver Carrito</button>
+    <button class="btn btn-primary" id="vaciarCarrito">Vaciar Carrito</button>
 
+    <h3>Total de la compra: <span id="totalCompra">0</span></h3>
+    <div class="row py-3" id="contenedorCarrito"></div>
 
-        <div class="cartt">
-            <h2 class="cart-title">Tu carrito</h2>
-            <div class="cart-content">
-                <div class="cartbox">
-                    <!-- cargado desde JS paso 2-->
-                </div>
-            <div class="total">
-                <div class="total-title">Total</div>
-                <div class="total-price">$0</div>
-
-            </div>
-            <button type="button" class="button-buy">Compre ahora</button>
-
-            <i class='bx bx-x' id="close-cart"></i>
-
-            </div>
-        </div>
-    
-
-    </header>
-
-    <section class="container">
-        <h2 class="aligner">Productos para comprar</h2>
-        <div class="father-flex"></div>
-        <!-- Esto esta cargado desde java script en paso 1-->
-    </section>
-
-
-
-
-
-
-
-
-<!----
-
-    <nav>
-        <a href="index.html"> baggio</a>
-        <h2 id="bienvenida">Bievenido a nuestro catalogo de productos</h2>
-    </nav>
-    <br>
-    <main>
-        <div class="flex-padre">
-        </div>
-        <div class="flex-padre">
-        </div>
-    </main>
-    <aside>
-    </aside>
-    <footer>
-    </footer>
--->
-<script src="./productos.js"></script>
-</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="productos.js"></script>
+  </body>
 </html>
-
