@@ -16,3 +16,28 @@ body{
     display: flex;
     justify-content: center;
 }
+
+input{
+     background-color: lightyellow;
+     height: 30px;
+     width: 400px;
+}
+
+label
+{
+    background-color: white;
+}
+
+button
+{
+    display: flex;
+    justify-self: center;
+    height: 30px;
+    width: 60px;
+}
+
+.buton
+{
+    display: flex;
+    justify-content: center; 
+}
