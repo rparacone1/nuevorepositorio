@@ -33,4 +33,6 @@ if (est == false)
       })
 }
 
+console.log(sumarRango(1,10))
+
 

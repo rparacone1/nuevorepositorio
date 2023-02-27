@@ -1,16 +1,16 @@
 * {
     box-sizing: border-box;
     background-color: blue;
-  }
+}
 
-  body {
+body {
     margin: 0;
     font-family: system-ui, sans-serif;
     color: black;
     background-color: blue;
-  }
-  
-  nav {
+}
+
+nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,9 +19,9 @@
     gap: 0.5rem;
     border-bottom: solid 1px #aaa;
     background-color: #eee;
-  }
-  
-  nav a {
+}
+
+nav a {
     display: inline-block;
     min-width: 9rem;
     padding: 0.5rem;
@@ -30,20 +30,21 @@
     text-align: center;
     text-decoration: none;
     color: #555;
-  }
-  
-  nav a[aria-current='page'] {
+}
+
+    nav a[aria-current='page'] {
     color: #000;
     background-color: #d4d4d4;
-  }
-  
-  main {
+}
+
+main {
     padding: 1rem;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-weight: bold;
     font-size: 1.5rem;
-  }
-  
-  
+}
+
+
+

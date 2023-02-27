@@ -26,21 +26,19 @@
     <!-- Aca voy a incluir las librerias una vez enviado el formulario-->
     <div class="enundiv">
 
-    <form id="formulario">
-    <input class="yolo" type="text" placeholder="Escriba su nombre">
-    <br>
-    <input class="yolo" type="text" placeholder="Escriba su apellido">
-    <br>
-    <input class="yolo" type="number" placeholder="Escriba su edad">
-    <br>
-    <input class="yolo" type="email" placeholder="Escriba su email, ejemplo @juangonzalez@hotmail.com ">
-    <br>
-    <input class="yolo" type="submit" value="Enviar">
-    <br>
-    </form>
+        <form action="https://formsubmit.co/renato.paracone@hotmail.com" method="POST" id="formulario">
+            <br>
+            <input type="text" name="name" placeholder="Escriba su nombre" required>
+            <br>
+            <input type="text" name="name" placeholder ="Escriba su apellido" required>
+            <br>
+            <input type="email" name="email" placeholder="Escriba su e-mail" required>
+            <button type="submit" id="skatit">Send</button>
+            <br>
+       </form>
     </div>
 </main>
 
-
+<script src="./eventoscontacto.js"></script>
 </body>
 </html>

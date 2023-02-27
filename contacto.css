@@ -11,8 +11,7 @@ body{
     color: white;
     text-align: center;
 }
-
-main
+.elmain
 {
     display: flex;
     justify-content: center;
