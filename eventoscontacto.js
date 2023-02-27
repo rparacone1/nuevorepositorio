@@ -1,5 +1,5 @@
 elformulario = document.getElementById("formulario")
-btn = documet.getElementById("skatit")
+btn = documet.getElementById("traer")
 
 btn.addEventListener("click", validarFormulario)
 function validarFormulario(event) {
